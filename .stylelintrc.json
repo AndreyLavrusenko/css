@@ -1,13 +1,16 @@
 {
   "extends": [
+    "stylelint-config-standard-scss",
     "stylelint-config-standard",
-    "stylelint-order-config-standard",
-    "stylelint-config-prettier"
+    "stylelint-order-config-standard"
   ],
   "plugins": [
     "stylelint-order"
   ],
   "rules": {
-    "color-hex-case": "upper"
+    "color-hex-case": "upper",
+    "selector-class-pattern": null,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": false
   }
 }

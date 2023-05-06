@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass natours/scss/main.scss natours/style/style.css -w"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "prettier": "^2.8.8",
+  "devDependencies": {
+    "postcss-bem-linter": "^3.3.0",
     "stylelint": "^15.6.1",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard": "^33.0.0",
-    "stylelint-order": "^6.0.3",
+    "stylelint-config-standard-scss": "^9.0.0",
+    "stylelint-order": "^4.1.0",
     "stylelint-order-config-standard": "^0.1.3"
+  },
+  "dependencies": {
+    "node-sass": "^8.0.0",
+    "sass": "^1.62.1",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }
