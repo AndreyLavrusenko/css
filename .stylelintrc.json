@@ -11,6 +11,7 @@
     "color-hex-case": "upper",
     "selector-class-pattern": null,
     "color-function-notation": "legacy",
-    "alpha-value-notation": false
+    "alpha-value-notation": false,
+    "import-notation": "string"
   }
 }
