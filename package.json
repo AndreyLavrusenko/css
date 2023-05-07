@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass natours/scss/main.scss natours/style/style.css -w"
+    "compile:sass": "node-sass natours/scss/main.scss natours/style/style.css",
+    "watch:sass": "node-sass natours/scss/main.scss natours/style/style.css -w"
   },
   "author": "",
   "license": "ISC",
