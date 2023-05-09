@@ -13,6 +13,6 @@
     "color-function-notation": "legacy",
     "alpha-value-notation": false,
     "import-notation": "string",
-    "property-no-vendor-prefix": [true, { "ignoreProperties": ["background-clip"] }]
+    "property-no-vendor-prefix": [true, { "ignoreProperties": ["background-clip", "box-decoration-break", "shape-outside"] }]
   }
 }
