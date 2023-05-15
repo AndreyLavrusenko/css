@@ -22,6 +22,7 @@
         border-radius: 10rem;
     }
 
+    &,
     &:link,
     &:visited {
         position: relative;
@@ -30,12 +31,15 @@
 
         padding: 1.5rem 4rem;
 
+        cursor: pointer;
+
         transition: all .2s;
 
         text-decoration: none;
 
         text-transform: uppercase;
 
+        border: none;
         border-radius: 10rem;
     }
 
@@ -51,8 +55,11 @@
         }
     }
 
-    &:active {
+    &:active,
+    &:focus {
         transform: translateY(-1px);
+
+        outline: none;
 
         box-shadow: 0 .5rem 1rem rgba($color-black, 0.2);
     }
