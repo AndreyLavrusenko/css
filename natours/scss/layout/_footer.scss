@@ -1,0 +1,71 @@
+@import '../abstracts/variables';
+
+.footer {
+    padding: 10rem 0;
+
+    background-color: $color-grey-dark-3;
+
+    font-size: 1.4rem;
+
+    &__logo-box {
+        margin-bottom: 8rem;
+
+        text-align: center;
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+    }
+
+    &__item {
+        padding-top: 2rem;
+
+        border-top: 1px solid $color-grey-dark-2;
+    }
+
+    &__list {
+        display: flex;
+
+        list-style: none;
+    }
+
+    &__link {
+        display: inline-block;
+
+        margin-right: 1.5rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__copyright {
+        color: $color-grey-light-1;
+
+        &--link {
+            transition: all .2s;
+
+            background-color: $color-grey-dark-3;
+
+            &:link,
+            &:visited {
+                display: inline-block;
+
+                text-decoration: none;
+                text-transform: uppercase;
+
+                color: $color-grey-light-1;
+            }
+
+            &:hover,
+            &:active {
+                transform: rotate(5deg) scale(1.2);
+
+                color: $color-primary;
+                box-shadow: 0 1rem 2rem rgba($color-black, .4);
+            }
+        }
+    }
+
+}
