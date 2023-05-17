@@ -486,6 +486,62 @@ body {
   .feature-box:hover {
     transform: scale(1.03) translateY(-1.5rem); }
 
+.popup {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  width: 100%;
+  height: 100vh;
+  transition: all .3s;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .popup:target {
+    visibility: visible;
+    opacity: 1; }
+  .popup__close:link, .popup__close:visited {
+    position: absolute;
+    top: 2.5rem;
+    right: 2.5rem;
+    transition: all .3s;
+    text-decoration: none;
+    color: #777;
+    font-size: 3rem;
+    line-height: 1; }
+  .popup__close:hover {
+    color: #55C57A; }
+  .popup__content {
+    display: table;
+    overflow: hidden;
+    width: 75%;
+    border-radius: 3px;
+    background-color: #FFF;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .popup__left {
+    display: table-cell;
+    width: 33%;
+    vertical-align: middle; }
+  .popup__right {
+    display: table-cell;
+    width: 66%;
+    padding: 3rem 5rem;
+    vertical-align: middle; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    margin-bottom: 4rem;
+    hyphens: auto;
+    font-size: 1.4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #EEE; }
+
 .header {
   position: relative;
   height: 95vh;
