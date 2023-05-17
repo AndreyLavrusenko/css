@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -145,7 +145,7 @@
         </div>
     </section>
 
-    <section class='section-tours'>
+    <section class='section-tours' id='section-tours'>
         <div class='u-center-text u-margin-bottom-big'>
             <h2 class='heading-secondary'>
                 Most popular tours
@@ -178,7 +178,7 @@
                             <p class='card-item__price-only'>Only</p>
                             <p class='card-item__price-value'>$297</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                        <a href="#popup" class="btn btn--white btn--animated">Book now!</a>
                     </div>
                 </div>
             </div>
@@ -208,7 +208,7 @@
                             <p class='card-item__price-only'>Only</p>
                             <p class='card-item__price-value'>$497</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                        <a href="#popup" class="btn btn--white btn--animated">Book now!</a>
                     </div>
                 </div>
             </div>
@@ -237,7 +237,7 @@
                             <p class='card-item__price-only'>Only</p>
                             <p class='card-item__price-value'>$897</p>
                         </div>
-                        <a href="#" class="btn btn--white btn--animated">Book now!</a>
+                        <a href="#popup" class="btn btn--white btn--animated">Book now!</a>
                     </div>
                 </div>
             </div>
@@ -385,6 +385,26 @@
         </div>
     </div>
 </footer>
+
+<div class='popup' id='popup'>
+    <div class='popup__content'>
+        <div class='popup__left'>
+            <img src='./image/nat-8.jpg' alt='' class='popup__img'>
+            <img src='./image/nat-9.jpg' alt='' class='popup__img'>
+        </div>
+        <div class='popup__right'>
+            <a href='#section-tours' class='popup__close'>&times;</a>
+            <h2 class='heading-secondary u-margin-bottom-small'>Start booking now</h2>
+            <h3 class='heading-tertiary u-margin-bottom-small'>Important &ndash; Please these terms before booking</h3>
+            <p class='popup__text'>Эта книга адресована всем, кто изучает русский язык. Но состоит она не из правил, упражнений и учебных текстов. Для этого созданы другие замечательные учебники.
+                У этой книги совсем иная задача. Она поможет вам научиться не только разговаривать, но и размышлять по-русски. Книга, которую вы держите в руках, составлена из афоризмов и размышлений великих мыслителей, писателей, поэтов, философов и общественных деятелей различных эпох. Их мысли - о тех вопросах, которые не перестают волновать человечество.
+            </p>
+
+            <a href='#' class='btn btn--green'>Book now</a>
+
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
