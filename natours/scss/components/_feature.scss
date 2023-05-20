@@ -1,4 +1,6 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
+
 
 .feature {
     &-box {
@@ -28,5 +30,24 @@
         &:hover {
             transform: scale(1.03) translateY(-1.5rem);
         }
+
+        @include respond(tab-port) {
+            width: 34%;
+
+            margin-bottom: 10rem;
+        }
+
+        @include respond(phone) {
+            width: 61%;
+
+            margin-bottom: 4rem;
+        }
+    }
+
+    @include respond(tab-port) {
+        justify-content: space-evenly !important;
+
+        width: 45%;
+
     }
 }

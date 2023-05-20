@@ -60,6 +60,11 @@
         box-shadow: 0 2rem 4rem rgba($color-black, .2);
 
         @include abs-center;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__left {
@@ -68,6 +73,13 @@
         width: 33%;
 
         vertical-align: middle;
+
+        @include respond(tab-land) {
+            display: flex;
+            flex-direction: row;
+
+            width: 100%;
+        }
     }
 
     &__right {
@@ -78,12 +90,20 @@
         padding: 3rem 5rem;
 
         vertical-align: middle;
+
+        @include respond(tab-land) {
+            width: 100%;
+        }
     }
 
     &__img {
         display: block;
 
         width: 100%;
+
+        @include respond(tab-land) {
+            width: 50%;
+        }
     }
 
     &__text {
@@ -96,6 +116,10 @@
         column-count: 2;
         column-gap: 4rem;
         column-rule: 1px solid $color-grey-light-2;
+
+        @include respond(phone) {
+            column-count: 1;
+        }
 
     }
 }
