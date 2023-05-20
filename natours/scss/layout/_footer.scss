@@ -1,16 +1,29 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 
 .footer {
-    padding: 10rem 0;
+    padding: 10rem 5rem;
 
     background-color: $color-grey-dark-3;
 
     font-size: 1.4rem;
 
+    &__row {
+        @include respond(phone) {
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
     &__logo-box {
         margin-bottom: 8rem;
 
         text-align: center;
+
+        @include respond(phone) {
+            margin-bottom: 4rem;
+        }
     }
 
     &__logo {
@@ -22,6 +35,10 @@
         padding-top: 2rem;
 
         border-top: 1px solid $color-grey-dark-2;
+
+        @include respond(phone) {
+            border: none;
+        }
     }
 
     &__list {
@@ -66,6 +83,10 @@
                 box-shadow: 0 1rem 2rem rgba($color-black, .4);
             }
         }
+    }
+
+    @include respond(phone) {
+        padding: 6rem 2rem;
     }
 
 }
