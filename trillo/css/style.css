@@ -23,6 +23,7 @@
 
 .hotel-view {
   flex: 1;
+  height: 100rem;
   background-color: #fff; }
 
 .header__logo {
@@ -72,7 +73,7 @@
   align-self: stretch; }
   .header__user-nav > * {
     padding: 0 2rem;
-    transition: all .4s;
+    transition: all 0.4s;
     cursor: pointer; }
     .header__user-nav > *:hover {
       background-color: #f4f2f2; }
@@ -98,11 +99,60 @@
     border-radius: 50%;
     background-color: #eb2f64;
     color: #fff;
-    font-size: .8rem; }
+    font-size: 0.8rem; }
   .header__user-nav--user-photo {
     height: 3.75rem;
     margin-right: 1rem;
     border-radius: 50%; }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .sidebar .side-nav {
+    margin-top: 3.5rem;
+    list-style: none;
+    font-size: 1.3rem; }
+    .sidebar .side-nav__item {
+      position: relative;
+      cursor: pointer; }
+      .sidebar .side-nav__item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 3px;
+        height: 100%;
+        transform: scaleY(0);
+        transform-origin: center;
+        transition: transform 0.2s, width 0.4s 0.2s, background-color 0.1s;
+        background-color: #eb2f64; }
+      .sidebar .side-nav__item:not(:last-child) {
+        margin-bottom: 0.5rem; }
+      .sidebar .side-nav__item:hover::before, .sidebar .side-nav__item--active::before {
+        width: 100%;
+        transform: scaleY(1); }
+      .sidebar .side-nav__item:active::before {
+        background-color: #ff3366; }
+    .sidebar .side-nav__link:link, .sidebar .side-nav__link:visited {
+      position: relative;
+      display: flex;
+      align-items: center;
+      z-index: 2;
+      padding: 1.5rem 3rem;
+      color: #faf9f9;
+      text-decoration: none;
+      text-transform: uppercase; }
+    .sidebar .side-nav__icon {
+      width: 1.75rem;
+      height: 1.75rem;
+      margin-right: 2rem;
+      fill: currentColor; }
+  .sidebar__legal {
+    padding: 2.5rem;
+    text-align: center;
+    color: #ccc;
+    font-size: 1.2rem; }
 
 * {
   margin: 0;
