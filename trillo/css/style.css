@@ -154,6 +154,12 @@
     color: #ccc;
     font-size: 1.2rem; }
 
+.gallery {
+  display: flex; }
+  .gallery__photo {
+    display: block;
+    width: 100%; }
+
 * {
   margin: 0;
   padding: 0; }
