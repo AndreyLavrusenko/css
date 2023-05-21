@@ -8,5 +8,6 @@
   "useTabs": true,
   "bracketSpacing": true,
   "bracketSameLine": false,
-  "vueIndentScriptAndStyle": true
+  "vueIndentScriptAndStyle": true,
+  "printWidth": 80
 }
