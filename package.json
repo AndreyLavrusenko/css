@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass natours/scss/main.scss natours/style/style.css",
-    "watch:sass": "node-sass natours/scss/main.scss natours/style/style.css -w"
+    "watch:sass": "node-sass natours/scss/main.scss natours/style/style.css -w",
+    "build:sass": "node-sass natours/scss/main.scss natours/style/style.comp.css",
+    "concat:css": ""
   },
   "author": "",
   "license": "ISC",
