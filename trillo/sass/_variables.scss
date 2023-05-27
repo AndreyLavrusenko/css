@@ -14,7 +14,6 @@ $color-grey-dark-3:  #999;
 $color-black: #000;
 $color-white: #fff;
 
-
 //SHADOW
 
 $shadow-dark: 0 2rem 6rem rgba($color-black, 0.3);
@@ -22,3 +21,11 @@ $shadow-light: 0 2rem 5rem rgba($color-black, 0.06);
 
 
 $border-line: 1px solid $color-grey-light-2;
+
+//MEDIA
+
+$bp-largest: 75em; // 1200px
+$bp-large : 68.75em; // 1100px
+$bp-medium : 56.25em; // 900px
+$bp-small : 37.5em; // 600px
+$bp-smallest : 31.25em; // 500px
